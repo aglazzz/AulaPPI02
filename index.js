@@ -2,6 +2,7 @@ import express from "express";
 
 const host = "0.0.0.0";
 const porta = 3000;
+var listaUsuarios = [];
 
 const server = express();
 
@@ -149,7 +150,7 @@ server.get("/cadastroUsuario", (requisicao, resposta) => {
         `);
 });
 
-server.post("/adicionarUsuario", (requisicao, resposta) => {
+server.post('/adicionarUsuario', (requisicao, resposta) => {
     console.log("Usuario cadastrado com sucesso");
     listaUsuarios.push();
 });
